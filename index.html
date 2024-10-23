@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinak Idea Lab Private Limited: Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customPurple: '#2A1768',
+                    },
+                    rotate: {
+                        '23': '23deg',
+                    },
+                    width: {
+                        '128': '122rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-white">
+    <div class="w-full max-w-6xl p-6 pt-32 bg-white shadow-lg rounded-lg relative overflow-hidden h-[50rem] sm:h-auto overflow-y-scroll sm:overflow-hidden">
+        <div class="absolute w-[122rem] bg-customPurple -rotate-[23deg]" style="top: -300px; left: -500px; height: 34rem;"></div>
+        <div class="absolute top-0 left-0 w-full text-left py-6 pl-10 text-4xl font-bold text-white">
+            OUR SERVICES
+        </div>
+
+        <div class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl px-4 z-10">
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+                <div class="rotate-box bg-white rounded-full">
+                    <img src="/Assets/emergency_service-150x150.png" alt="Emergency Plumbing Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
+                </div>
+                <div class="mt-16">
+                    <h3 class="text-lg md:text-xl font-semibold text-black">Emergency Plumbing Services</h3>
+                    <p class="text-gray-500 mt-2">Our plumbers are ready 24/7 for emergencies – including nights, weekends, and holidays.</p>
+                    <a href="#" class="flex justify-center items-center uppercase text-customPurple font-bold">Explore this service<img class="size-5" src="/Assets/icons8-greater-than-50.png"></a>
+                </div>
+            </div>
+
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+                <div class="rotate-box bg-white rounded-full">
+                    <img src="/Assets/plumbing_drain_services-150x150.webp" alt="Plumbing and Drains Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
+                </div>
+                <div class="mt-16">
+                    <h3 class="text-lg md:text-xl font-semibold text-black">Plumbing and Drains</h3>
+                    <p class="text-gray-500 mt-2">We are the largest plumbing and drain service company, handling thousands of repairs daily.</p>
+                    <a href="#" class="flex justify-center items-center uppercase text-customPurple font-bold">Explore this service<img class="size-5" src="/Assets/icons8-greater-than-50.png"></a>
+                </div>
+            </div>
+
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+                <div class="rotate-box bg-white rounded-full">
+                    <img src="/Assets/water_damage-150x150.webp" alt="Water Damage Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
+                </div>
+                <div class="mt-16">
+                    <h3 class="text-lg md:text-xl font-semibold text-black">Water Damage</h3>
+                    <p class="text-gray-500 mt-2">Equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                    <a href="#" class="flex justify-center items-center uppercase text-customPurple font-bold">Explore this service<img class="size-5" src="/Assets/icons8-greater-than-50.png"></a>
+                </div>
+            </div>
+
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+                <div class="rotate-box bg-white rounded-full">
+                    <img src="/Assets/water_heater_Services-150x150.webp" alt="Water Heaters Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
+                </div>
+                <div class="mt-16">
+                    <h3 class="text-lg md:text-xl font-semibold text-black">Water Heaters</h3>
+                    <p class="text-gray-500 mt-2">Repair and replacement of gas, electric, and tankless water heaters.</p>
+                    <a href="#" class="flex justify-center items-center uppercase text-customPurple font-bold">Explore this service<img class="size-5" src="/Assets/icons8-greater-than-50.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

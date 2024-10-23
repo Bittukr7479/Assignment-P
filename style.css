@@ -1,0 +1,32 @@
+.rotate-box {
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rotate-box:hover {
+    transform: translateX(-50%) rotate(360deg);
+}
+
+.service-box {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: visible;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+    .rotate-box {
+        top: -30px;
+    }
+
+    .service-box {
+        margin-bottom: 2rem;
+    }
+}
