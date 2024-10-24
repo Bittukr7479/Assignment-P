@@ -24,6 +24,15 @@
             }
         }
     </script>
+    <script>
+        function rotateBox(element) {
+            // Remove 'rotate-active' class from all service boxes
+            document.querySelectorAll('.service-box').forEach(box => box.classList.remove('rotate-active'));
+
+            // Add 'rotate-active' class to the clicked service-box
+            element.classList.add('rotate-active');
+        }
+    </script>
 </head>
 
 <body class="flex items-center justify-center h-screen bg-white">
@@ -34,7 +43,7 @@
         </div>
 
         <div class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl px-4 z-10">
-            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center" data-id="box1" onclick="rotateBox(this)">
                 <div class="rotate-box bg-white rounded-full">
                     <img src="/Assets/emergency_service-150x150.png" alt="Emergency Plumbing Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
                 </div>
@@ -45,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center" data-id="box2" onclick="rotateBox(this)">
                 <div class="rotate-box bg-white rounded-full">
                     <img src="/Assets/plumbing_drain_services-150x150.webp" alt="Plumbing and Drains Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
                 </div>
@@ -56,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center" data-id="box3" onclick="rotateBox(this)">
                 <div class="rotate-box bg-white rounded-full">
                     <img src="/Assets/water_damage-150x150.webp" alt="Water Damage Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
                 </div>
@@ -67,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center">
+            <div class="service-box p-6 bg-white shadow-lg rounded-lg text-center" data-id="box4" onclick="rotateBox(this)">
                 <div class="rotate-box bg-white rounded-full">
                     <img src="/Assets/water_heater_Services-150x150.webp" alt="Water Heaters Image" class="border-4 border-customPurple p-4 rounded-full object-cover w-24 h-24">
                 </div>

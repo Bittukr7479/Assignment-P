@@ -1,3 +1,4 @@
+/* Remove hover effect from .rotate-box */
 .rotate-box {
     transition: transform 0.5s ease-in-out;
     position: absolute;
@@ -6,21 +7,25 @@
     transform: translateX(-50%);
 }
 
-.rotate-box:hover {
-    transform: translateX(-50%) rotate(360deg);
-}
-
+/* Apply hover effect to the .service-box */
 .service-box {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
     overflow: visible;
 }
 
+/* Rotate the box on hover */
 .service-box:hover {
-    transform: scale(1.05);
+    transform: rotate(360deg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Rotate the box on click */
+.service-box.rotate-active {
+    transform: rotate(360deg);
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 640px) {
     .rotate-box {
         top: -30px;
